@@ -1,0 +1,166 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  body {
+    font-family: "Outfit", serif;
+    color: rgb(50, 50, 50);
+  }
+
+  .container {
+    width: 1200px;
+    height: 667px;
+    display: flex;
+  }
+
+  .body-left {
+    width: 445px;
+    height: 100%;
+    position: relative;
+
+  }
+
+  .back-text {
+    position: absolute;
+    top: 25%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    opacity: 50%;
+  }
+
+  .back-text + p {
+    position: absolute;
+    top: 25%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 150px;
+    font-family: "Engagement", cursive;
+  }
+
+  .body-right {
+    width: 760px;
+    display: flex;
+    flex-direction: column;
+    background-color: #EAEDF0;
+  }
+
+  .heading {
+    height: 220px;
+    width: 100%;
+    font-family: "Outfit", serif;
+    font-size: 10px;
+    padding: 50px 80px 50px 40px;
+  }
+
+  .heading h1 {
+    margin-bottom: 20px;
+  }
+
+    .main-form {
+    padding-top: 25px;
+    padding-left: 40px;
+    height: 300px;
+    background-color: white;
+    box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.05);
+    font-family: "Outfit", serif;
+    }
+
+    .main-form p {
+        font-weight: 500;
+        font-size: 25px;
+    }
+
+  .form-element {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 60px   ;
+  }
+
+  .left-form {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .right-form {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  input {
+    margin-bottom: 20px;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+  }
+
+  input:focus {
+    border: 2px solid rgb(35, 104, 65);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.05);
+  }
+
+  input:focus-visible {
+    border: 2px solid rgb(35, 104, 65);
+  }
+
+  input[type="password"]:invalid {
+    border: 1px solid rgb(181, 0, 0);
+  }
+
+  label {
+    font-weight: 500;
+    font-size: 13px;
+  }
+
+  .foot {
+    font-family: "Outfit", serif;
+    padding-left: 40px;
+    padding-top: 30px;
+  }
+
+  .create-account {
+    border: 0;
+    padding: 15px 50px;
+    border-radius: 5px;
+    background-color: rgb(35, 104, 65);
+    color: white;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 18px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .create-account + p {
+    font-weight: 600;
+    font-size: 18px;
+  }
